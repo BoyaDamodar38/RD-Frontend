@@ -1,0 +1,172 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto";
+}
+
+header {
+    background-color: navy;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog {
+    background-color: white;
+    height: fit-content;
+    width: 30%;
+    text-align: center;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid black;
+    /* height: 100px; */
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+#a,
+#c {
+    padding-bottom: 20px;
+}
+
+.main1 {
+    display: flex;
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+
+.main1>.subdiv {
+    padding: 30px;
+
+}
+
+.subdiv>.first {
+    background-color: linear;
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(to right, black, gray);
+}
+
+.main1>.second {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main1>.second>h3,
+p,
+button {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#sec {
+    width: 100px;
+}
+
+@media only screen and (min-width:320px) and (max-width:445px) {
+    header {
+        width: 100%;
+    }
+
+    .blog {
+        width: 50%;
+        height: 50%;
+        font-size: 10px;
+        padding-top: 7px;
+    }
+
+    .blog>h6 {
+        font-size: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #b {
+        padding-bottom: 20px;
+    }
+
+    .main1 {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .main1>.subdiv {
+        padding: 0px;
+        position: relative;
+        left: 40px;
+        top: 5px;
+    }
+
+    .subdiv>.first {
+        margin: 0px;
+        height: 250px;
+        width: 250px;
+    }
+
+    .main1>.second {
+        padding-top: x;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main1>.second>h3,
+    p,
+    button {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    #sec {
+        width: 100px;
+    }
+
+    #c,
+    #a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0px;
+    }
+
+    #a>label {
+        padding: 0px;
+    }
+}
+
+@media only screen and (min-width:446px) and (max-width:768px) {
+    header {
+        width: 100%;
+    }
+
+    .blog {
+        width: 50%;
+    }
+    .main1 > .second{
+        padding-bottom: 10px;
+    }
+    .main1{
+        width: 100%;
+    }
+}
