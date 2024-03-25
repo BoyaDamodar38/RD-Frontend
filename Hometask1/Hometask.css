@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -15,7 +14,7 @@ header {
     align-items: center;
 }
 
-.blog {
+.news-blog {
     background-color: white;
     height: fit-content;
     width: 30%;
@@ -30,143 +29,101 @@ nav {
     display: flex;
     width: 100%;
     border-bottom: 2px solid black;
-    /* height: 100px; */
     justify-content: space-around;
     padding: 20px;
     align-items: center;
 }
 
-#a,
-#c {
+#select-category,
+#subscribe {
     padding-bottom: 20px;
 }
 
-.main1 {
+.content {
     display: flex;
     border-bottom: 2px solid gray;
     width: 100%;
 }
 
-.main1>.subdiv {
-    padding: 30px;
-
-}
-
-.subdiv>.first {
-    background-color: linear;
+.image {
     height: 150px;
     width: 150px;
     background-image: linear-gradient(to right, black, gray);
+    margin: 30px;
 }
 
-.main1>.second {
-    padding-top: 30px;
+.content>.image-content {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    padding-top: 30px;
+    gap: 10px;
 }
 
-.main1>.second>h3,
-p,
-button {
-    margin-left: 30px;
-    margin-top: 10px;
-}
-#sec {
-    width: 100px;
+.image-content>#continue-btn {
+    background-color: orangered;
+    color: white;
+    width: 180px;
+    height: 30px;
+    border: none;
+    box-shadow: 1.5px 1.5px 1.5px gray;
 }
 
-@media only screen and (min-width:320px) and (max-width:445px) {
-    header {
-        width: 100%;
-    }
+#subscribe-btn {
+    background-color: black;
+    color: white;
+}
 
-    .blog {
-        width: 50%;
-        height: 50%;
-        font-size: 10px;
+@media only screen and (max-width:445px) {
+    .news-blog {
+        width: 80%;
+        height: 62%;
         padding-top: 7px;
     }
 
-    .blog>h6 {
-        font-size: 10px;
-    }
-
     nav {
-        display: flex;
         flex-direction: column;
-        width: 100%;
-
+        gap: 10px;
     }
 
-    #b {
-        padding-bottom: 20px;
-    }
-
-    .main1 {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 15px;
-    }
-
-    .main1>.subdiv {
+    #select-category,
+    #subscribe {
+        align-self: start;
         padding: 0px;
-        position: relative;
-        left: 40px;
-        top: 5px;
     }
 
-    .subdiv>.first {
-        margin: 0px;
-        height: 250px;
-        width: 250px;
-    }
-
-    .main1>.second {
-        padding-top: x;
-        margin-top: 0px;
-        display: flex;
+    .content {
         flex-direction: column;
+        padding-bottom: 5px;
+        gap: 10px;
+    }
+
+    .image {
+        margin: 5px;
+        align-self: start;
+    }
+
+    .image-content {
         width: 100%;
     }
 
-    .main1>.second>h3,
-    p,
-    button {
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-
-    #sec {
+    #newstype {
         width: 100px;
-    }
-
-    #c,
-    #a {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 0px;
-    }
-
-    #a>label {
-        padding: 0px;
     }
 }
 
 @media only screen and (min-width:446px) and (max-width:768px) {
-    header {
-        width: 100%;
-    }
 
-    .blog {
+    .news-blog {
         width: 50%;
     }
-    .main1 > .second{
+
+    .content>.image-content {
         padding-bottom: 10px;
     }
-    .main1{
-        width: 100%;
+
+    .image {
+        margin: 15px;
+        justify-self: center;
     }
 }
