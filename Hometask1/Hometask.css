@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto";
+}
+
+header {
+    background-color: navy;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-blog {
+    background-color: white;
+    height: fit-content;
+    width: 30%;
+    text-align: center;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid black;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+#select-category,
+#subscribe {
+    padding-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(to right, black, gray);
+    margin: 30px;
+}
+
+.content>.image-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+.image-content>#continue-btn {
+    background-color: orangered;
+    color: white;
+    width: 180px;
+    height: 30px;
+    border: none;
+    box-shadow: 1.5px 1.5px 1.5px gray;
+}
+
+#subscribe-btn {
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width:445px) {
+    .news-blog {
+        width: 80%;
+        height: 62%;
+        padding-top: 7px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #select-category,
+    #subscribe {
+        align-self: start;
+        padding: 0px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding-bottom: 5px;
+        gap: 10px;
+    }
+
+    .image {
+        margin: 5px;
+        align-self: start;
+    }
+
+    .image-content {
+        width: 100%;
+    }
+
+    #newstype {
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width:446px) and (max-width:768px) {
+
+    .news-blog {
+        width: 50%;
+    }
+
+    .content>.image-content {
+        padding-bottom: 10px;
+    }
+
+    .image {
+        margin: 15px;
+        justify-self: center;
+    }
+}
